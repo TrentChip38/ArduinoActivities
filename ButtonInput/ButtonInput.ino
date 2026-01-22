@@ -9,7 +9,7 @@
 */
 //Definitions are similar to variables, here these are aliases for the pin number
 #define LEDPin 6
-#define btnPin 8
+#define btnPin 5
 
 //Setup function runs once when device is powered on
 void setup() {
@@ -22,7 +22,7 @@ void setup() {
 void loop() {
   //Track on/off, start off
   int LEDState = 0;
-  
+
   delay(300);
   //Check the button every tenth second
   int buttonState = digitalRead(btnPin);
