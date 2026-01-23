@@ -6,5 +6,5 @@ This repo will hold code and circuit diagrams for a few simple Arduino projects.
 2. LEDPinOutput
 3. ButtonInput
 4. BuzzerTone
-5. MusicBox
+5. ToneKeyboard
 6. MemoryGame
