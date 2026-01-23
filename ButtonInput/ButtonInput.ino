@@ -2,7 +2,7 @@
   Read a push button and toggle an LED
 
   You should connect your LED in the correct direction to the specified pin with a 1k+ ohm resistor.
-  Connect your button so one side is GND and the disconnected pin side is on the input pin (8)
+  Connect your button so one side is GND and the disconnected pin side is on the input pin (5)
 
   This sketch does not properly debounce the button, 
   for that see File->Examples->Digital->Debounce
@@ -18,18 +18,18 @@ void setup() {
   pinMode(btnPin, INPUT_PULLUP);
 }
 
+//Track on/off, start off
+int LEDState = HIGH;
 //Loop function runs over and over after setup
 void loop() {
-  //Track on/off, start off
-  int LEDState = 0;
 
-  delay(300);
-  //Check the button every tenth second
+  delay(200);
+  //Check the button every fith of a second
   int buttonState = digitalRead(btnPin);
   //This "if" statement executes if buttonState equals 0
-  if (buttonState == 0){
-    //This assignment makes LEDState switch 0 to 1 and 1 to 0
-    LEDState != LEDState;
+  if (buttonState == LOW){
+    //This assignment makes LEDState switch HIGH to LOW and LOW to HIGH
+    LEDState = ~LEDState;
   }
 
   //Set LED to be high or low
