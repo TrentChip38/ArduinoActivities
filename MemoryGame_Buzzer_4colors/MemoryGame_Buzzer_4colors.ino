@@ -88,7 +88,7 @@ void show_sequence(){
     noTone(speakerPin);
     delay(200);
   }
-  delay(500);
+  delay(100);
 }
 
 void get_sequence() {
