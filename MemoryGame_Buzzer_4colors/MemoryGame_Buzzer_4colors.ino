@@ -13,7 +13,13 @@ https://projecthub.arduino.cc/Arduino_Scuola/a-simple-simon-says-game-6f7fef
 It has been modified to have variables for pins and use for loops
 And to use buzzers for each pin and winning/losing sounds
 */
-#include "pitches.h"
+//#include "pitches.h"
+#define NOTE_C4 262
+#define NOTE_D4 294
+#define NOTE_E4 330
+#define NOTE_G4 392
+#define NOTE_C5 523
+#define NOTE_C3 131
 
 // Notes to play from the "pitches" library
 int notes[] = { NOTE_C4, NOTE_D4, NOTE_E4, NOTE_G4 };
