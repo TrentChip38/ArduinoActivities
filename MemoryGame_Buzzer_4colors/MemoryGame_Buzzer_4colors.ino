@@ -36,6 +36,7 @@ const int ledPins[] = {8, 9, 10, 11};//{11, 10, 9, 8}
 
 const int startSpeed = 1000;//If you think its too slow, start at 300-500
 const int minSpeed = 50;//If you don't stop it here, it is too fast
+const int playWinTone = 1;//If the win beep every time is annoying, change this to 0 and it wont play
 
 const int MAX_LEVEL  = 100;
 int sequence[MAX_LEVEL];
@@ -165,7 +166,8 @@ void right_sequence(){
   //   noTone(speakerPin);
   //   delay(30);
   // }
-  tone(speakerPin, NOTE_C5, 500); // C5 is a high note
+  if (playWinTone)
+    tone(speakerPin, NOTE_C5, 500); // C5 is a high note
   //Blink all
   allLow();
   delay(250);
