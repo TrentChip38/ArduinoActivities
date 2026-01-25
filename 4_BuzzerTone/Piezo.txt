@@ -1,0 +1,2 @@
+Another example of button input.
+Has a piezo buzzer that makes a tone.
