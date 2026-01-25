@@ -1,0 +1,3 @@
+Turns an external LED on and off.
+A very simple circuit to start learning how breadboards work and basic components.
+And how to write to a pin on the board.
