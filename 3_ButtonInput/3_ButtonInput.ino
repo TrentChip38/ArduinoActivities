@@ -28,14 +28,9 @@ void loop() {
   int buttonState = digitalRead(btnPin);
   //This "if" statement executes if buttonState equals 0
   if (buttonState == LOW){
-    //This assignment makes LEDState switch HIGH to LOW and LOW to HIGH
+    //This assignment switches LEDState from HIGH to LOW and LOW to HIGH
     LEDState = ~LEDState;
-  }
-
-  //Set LED to be high or low
-  if (LEDState == HIGH){
-    digitalWrite(LEDPin, HIGH);
-  }else{
-    digitalWrite(LEDPin, LOW);
+    //Set LED state
+    digitalWrite(LEDPin, LEDState);
   }
 }
