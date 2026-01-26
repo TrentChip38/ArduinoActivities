@@ -1,8 +1,8 @@
 /*This sketch is a simple version of the famous Simon Says game. You can  use it and improved it adding
 levels and everything you want to increase the  diffuculty!
 
-There are 4 LEDs conencted to pins 8 - 11 that pulse in a different order you have to remember
-There are 4 buttons connected to pins 4 - 7 that you use to replicate the right sequence
+There are 4 LEDs conencted to pins 9 - 12 that pulse in a different order you have to remember
+There are 4 buttons connected to pins 5 - 8 that you use to replicate the right sequence
 One of the buttons is the start button
 
 When you get the sequence right a happy beep will play
@@ -24,13 +24,13 @@ And to use buzzers for each pin and winning/losing sounds
 // Notes to play from the "pitches" library
 int notes[] = { NOTE_C4, NOTE_D4, NOTE_E4, NOTE_G4 };
 //Pins used for buttons
-const int buttonPins[] = { 4, 5, 6, 7 };
+const int buttonPins[] = { 5, 6, 7, 8 };
 const int buttonCount = 4;//You could add more buttons and tones
 const int actualSpeakerPin = 3;//Track speaker pin, but be able to turn it off
 int speakerPin = actualSpeakerPin;
 const int unusedPin = 2;
 //Pins used for LEDs
-const int ledPins[] = {8, 9, 10, 11};//{11, 10, 9, 8}
+const int ledPins[] = { 9, 10, 11, 12};//{12, 11, 10, 9}
 //The wiring might have these flipped
 //If so, reverse their order in this array
 
