@@ -10,3 +10,4 @@ If the sketch doesn't upload:
 If that doesn't work then you might not have the correct drivers. 
 You will have to google to troubleshoot and find what kind of board driver you have.
 Most likely type requires you to install the CH340 driver:
+https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all

@@ -8,3 +8,6 @@ This repo will hold code and circuit diagrams for a few simple Arduino projects.
 4. BuzzerTone
 5. ToneKeyboard
 6. MemoryGame
+
+Each project has the code and a circuit diagram.
+There is a version of the last two projects for 3 or 4 buttons.
