@@ -1,7 +1,7 @@
 /*
   Read a push button and play a tone
 
-  Connect your button so one side is GND and the disconnected pin side is on the input pin (6)
+  Connect your button so one side is GND and the disconnected pin side is on the input pin (5)
   Connect a piezo buzzer to GND and to pin (3)
 */
 //Definitions are similar to variables, here these are aliases for the pin number
